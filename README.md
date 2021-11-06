@@ -5,15 +5,15 @@ JS library for financial math
 
 
 
-## 0. HELPER FUNCTIONS
+## HELPER FUNCTIONS
 
-0.1 __Yield__
+__Yield__
 
 ```javascript
 cfa.yield(a,b)
 ```
 
-0.2 Average 
+__Average__
 
 ```javascript
 cfa.average(array)
