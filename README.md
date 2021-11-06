@@ -12,9 +12,17 @@ JS library for financial math
 
 
 
->Example
->this is example
->yes
+## Example
+
+> Calculate rolling return in an array
+
+```javascript
+
+let array = [1, 1.02, 1.03, 1, 1.03, 1.05]
+cfa.yield_array(array2, 1)
+
+```
+
 
 ## TIME VALUE OF MONEY FUNCTIONS
 
