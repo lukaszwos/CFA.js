@@ -152,6 +152,8 @@ cfa.npv(array, r)
 
 <!-- // 1.13 XIRR doesn't work -->
 
+## Statistics
+
 __Median__
 
 ```javascript
@@ -198,67 +200,94 @@ cfa.sample_variance(array)
 
 __Sample standard deviation__
 
+```javascript
 cfa.standard_deviation(array)
+```
 
-// 2.3 Sample correlation
+__Sample correlation__
 
+```javascript
 cfa.sample_correlation(array_X, array_Y)
+```
 
-// 2.4 Significance of correlation coefficient
+__Significance of correlation coefficient__
 
+```javascript
 cfa.corr_significance(array_X, array_Y)
+```
+
+## Linear regression 
 
 
-// 2.5 Linear regression 
 
+__Mean Absolute Deviation__
 
-
-// 2.6 Mean Absolute Deviation
-
+```javascript
 cfa.mad(array) 
+```
 
-// 2.7 Semivariance
+__Semivariance__
 
+```javascript
 cfa.semivariance(array) 
+```
 
-// 2.8 Semideviation
+__Semideviation__
 
+```javascript
 cfa.semideviation(array) 
+```
 
-// 2.9 Target semivariance
+__Target semivariance__
 
+```javascript
 cfa.target_semivariance(array, target)
+```
 
 
-// 2.10 Target Semideviation
+__Target Semideviation__
 
+```javascript
 cfa.target_semideviation(array, target) 
+```
 
-// 2.11 Coefficient of variation
+__Coefficient of variation__
 
+```javascript
 cfa.cv(array) 
+```
 
-// 2.12 Sharpe Ratio
+__Sharpe Ratio__
 
+```javascript
 cfa.sharpe(array_portfolio, array_rf)
+```
 
-// 2.13 Sample Skewness
+__Sample Skewness__
 
+```javascript
 cfa.sample_skewness(array)
+```
 
-// 2.14 Sample Kurtosis
+__Sample Kurtosis__
 
+```javascript
 cfa.sample_kurtosis(array)
+```
 
-// 3 Probabililty
+## Probabililty
 
-// 3.1 Covariance Matrix - takes array of arrays
+__Covariance Matrix__ - takes array of arrays
 
+```javascript
 cfa.covariance_matrix(array)
+```
 
-// 3.2 Correlation Matrix - takes array of arrays
+__Correlation Matrix__ - takes array of arrays
 
+```javascript
 cfa.correlation_matrix(array)
+```
 
 
 
