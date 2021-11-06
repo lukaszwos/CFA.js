@@ -5,7 +5,7 @@ JS library for financial math
 
 
 
-0 HELPER FUNCTIONS
+0. HELPER FUNCTIONS
 
 0.0001 Yield
 
