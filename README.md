@@ -2,7 +2,7 @@
 
 
 # cfa.js
-JS library for financial math
+
 
 1. [Time value of money functions](#time-value-of-money-functions)
 2. [Statistics](#statistics)
