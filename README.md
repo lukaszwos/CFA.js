@@ -9,7 +9,9 @@ JS library for financial math
 
 0.0001 Yield
 
-```cfa.yield(a,b)```
+```javascript
+cfa.yield(a,b)
+```
 
 0.1 Average - average(array)
 
