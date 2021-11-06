@@ -7,44 +7,56 @@ JS library for financial math
 
 ## 0. HELPER FUNCTIONS
 
-### 0.1 Yield
+0.1 Yield
 
 ```javascript
 cfa.yield(a,b)
 ```
 
-0.1 Average - average(array)
+0.2 Average 
 
 ```javascript
 cfa.average(array)
 ```
 
-// 0.2 Array parse to float
+0.3 Array parse to float
 
+```javascript
 cfa.float_array(array)
+```
 
-// 0.3 Sum of array
+0.4 Sum of array
 
+```javascript
 cfa.sum(array)
+```
 
 
-// 0.4 Sort array descending
+0.5 Sort array descending
 
+```javascript
 cfa.sort_desc(array)
+```
 
 
-// 0.5 Extent
+0.6 Extent
 
+```javascript
 cfa.extent(array)
+```
 
-// 0.5.1 MAX
+0.6.1 MAX
 
+```javascript
 cfa.max(array)
+```
 
 
-// 0.5.2 MIN
+0.6.2 MIN
 
+```javascript
 cfa.min(array)
+```
 
 
 // 0.6 Range
