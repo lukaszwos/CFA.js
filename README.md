@@ -1,3 +1,6 @@
+
+
+
 # CFA.js
 JS library for financial math
 
@@ -7,6 +10,11 @@ JS library for financial math
 4. [Probability](#probabililty)
 5. [Helper Functions](#helper-functions)
 
+
+
+>Example
+>this is example
+>yes
 
 ## TIME VALUE OF MONEY FUNCTIONS
 
