@@ -7,7 +7,7 @@ JS library for financial math
 
 ## 0. HELPER FUNCTIONS
 
-0.1 Yield
+0.1 __Yield__
 
 ```javascript
 cfa.yield(a,b)
