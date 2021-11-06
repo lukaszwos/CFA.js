@@ -66,12 +66,15 @@ cfa.range(array)
 
 __k days yield array__
 
+```javascript
 cfa.yield_array(array, days)
+```
 
 __Rolling function with callback__
 
+```javascript
 cfa.rolling = (array, days, callback)
-
+```
 
 ## TIME VALUE OF MONEY FUNCTIONS
 
