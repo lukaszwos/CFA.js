@@ -150,41 +150,53 @@ cfa.npv(array, r)
 
 
 
-// 1.13 XIRR doesn't work
+<!-- // 1.13 XIRR doesn't work -->
 
-// 1.14 Median
+__Median__
 
+```javascript
 cfa.median(array)
+```
 
-// 1.15 Mode - Single modality so far
+__Mode - Single modality so far__
 
+```javascript
 cfa.mode(array)
+```
 
-// 1.16 Weighted Mean
+__Weighted Mean__
 
+```javascript
 cfa.weighted_mean(array)
+```
 
-// 1.17 Geometric Mean
+__Geometric Mean__
 
+```javascript
 cfa.geometric_mean(array)
-	
+```
 
-// 1.18 Harmonic Mean
+__Harmonic Mean__
 
+```javascript
 cfa.harmonic_mean(array)
+```
 
 
 
+__Covariance__
 
-// 2.1 Covariance
-
+```javascript
 cfa.covariance(array_X, array_Y)
+```
 
-// 2.2 Sample variance
+__Sample variance__
 
+```javascript
 cfa.sample_variance(array)
+```
 
-// 2.2 Sample standard deviation
+__Sample standard deviation__
 
 cfa.standard_deviation(array)
 
