@@ -73,7 +73,7 @@ cfa.yield_array(array, days)
 __Rolling function with callback__
 
 ```javascript
-cfa.rolling = (array, days, callback)
+cfa.rolling(array, days, callback)
 ```
 
 ## TIME VALUE OF MONEY FUNCTIONS
@@ -96,41 +96,57 @@ __Continous compounding__
 cfa.fv_continous(pv, r, n) 
 ```
 
-// 1.4 Effective Annual Rate
+__Effective Annual Rate__
 
+```javascript
 cfa.ear(r,m) 
+```
 
-// 1.5 Continous Effective Annual Rate
+__Continous Effective Annual Rate__
 
+```javascript
 cfa.ear_continous(r) 
+```
 
-// 1.6 Future Value of Ordinary Annuity
+__Future Value of Ordinary Annuity__
 
+```javascript
 cfa.fv_annuity_ordinary(a,r,n)
+```
 
-// 1.7 Present Value of Ordinary Annuity page 319
+__Present Value of Ordinary Annuity__
 
+```javascript
 cfa.pv_annuity_ordinary(a,r,n)
+```
 
 
-// 1.8 Future Value of Unequal Cash Flows
+__Future Value of Unequal Cash Flows__
 
+```javascript
 cfa.fv_unequal_cf(array, r) 
+```
 
-// 1.9 Present Value of Unequal Cash Flows
+__Present Value of Unequal Cash Flows__
 
+```javascript
 cfa.pv_unequal_cf(array, r)
+```
 
-// 1.10 Present Value of Perpetuity
+__Present Value of Perpetuity__
 
+```javascript
 cfa.pv_perpetuity(a, r)
+```
 
 
-// 1.11 Net Present Value
+__Net Present Value__
 
+```javascript
 cfa.npv(array, r)
+```
 
-// 1.12 Internal Rate of Return - doesn't work
+[//]: # 1.12 Internal Rate of Return - doesn't work
 
 
 
