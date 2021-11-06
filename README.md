@@ -19,57 +19,58 @@ __Average__
 cfa.average(array)
 ```
 
-0.3 Array parse to float
+__Array parse to float__
 
 ```javascript
 cfa.float_array(array)
 ```
 
-0.4 Sum of array
+__Sum of array__
 
 ```javascript
 cfa.sum(array)
 ```
 
 
-0.5 Sort array descending
+__Array - sort descending__
 
 ```javascript
 cfa.sort_desc(array)
 ```
 
-
-0.6 Extent
+__Array - Extent__
 
 ```javascript
 cfa.extent(array)
 ```
 
-0.6.1 MAX
+__MAX__
 
 ```javascript
 cfa.max(array)
 ```
 
 
-0.6.2 MIN
+__MIN__
 
 ```javascript
 cfa.min(array)
 ```
 
 
-// 0.6 Range
+__Range__
 
+```javascript
 cfa.range(array)
+```
 
-// 0.7 k days yield array
+__k days yield array__
 
-cfa.yield_array(array)
+cfa.yield_array(array, days)
 
-// 0.8 Rolling function with callback
+__Rolling function with callback__
 
-still doesn't work
+cfa.rolling = (array, days, callback)
 
 
 // 1. TIME VALUE OF MONEY FUNCTIONS
