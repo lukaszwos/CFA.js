@@ -73,19 +73,25 @@ __Rolling function with callback__
 cfa.rolling = (array, days, callback)
 
 
-// 1. TIME VALUE OF MONEY FUNCTIONS
+## TIME VALUE OF MONEY FUNCTIONS
 
-// 1.1 Future value
+__Future value__
 
+```javascript
 cfa.fv(pv, r, n, m) 
+```
 
-// 1.2 Present value
+__Present value__
 
+```javascript
 cfa.pv(fv,r,n,m) 
+```
 
-// 1.3 Continous compounding
+__Continous compounding__
 
+```javascript
 cfa.fv_continous(pv, r, n) 
+```
 
 // 1.4 Effective Annual Rate
 
