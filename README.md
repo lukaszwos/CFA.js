@@ -14,13 +14,26 @@ JS library for financial math
 
 ## Example
 
-> Calculate rolling return in an array
+Calculate rolling return in an array
+> rolling return day by day (you can input any number of day - lower than array length of course)
 
 ```javascript
 
 let array = [1, 1.02, 1.03, 1, 1.03, 1.05]
 cfa.yield_array(array2, 1)
 
+```
+
+returns:
+
+```javascript
+[
+  0.020000000000000018,
+  0.009803921568627416,
+  -0.029126213592232997,
+  0.030000000000000027,
+  0.01941747572815533
+]
 ```
 
 
