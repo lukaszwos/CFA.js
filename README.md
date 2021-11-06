@@ -146,7 +146,7 @@ __Net Present Value__
 cfa.npv(array, r)
 ```
 
-[//]: # 1.12 Internal Rate of Return - doesn't work
+<!-- Internal Rate of Return - doesn't work -->
 
 
 
