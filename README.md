@@ -2,10 +2,10 @@
 JS library for financial math
 
 1. [Time value of money functions](#time-value-of-money-functions)
-2. [Statistics](#2.statistics)
-3. [Linear Regression](#3.linear-regression)
-4. [Probability](#4.probabililty)
-5. [Helper Functions](#5.helper-functions)
+2. [Statistics](#statistics)
+3. [Linear Regression](#linear-regression)
+4. [Probability](#probabililty)
+5. [Helper Functions](#helper-functions)
 
 
 ## TIME VALUE OF MONEY FUNCTIONS
@@ -84,7 +84,7 @@ cfa.npv(array, r)
 
 <!-- // 1.13 XIRR doesn't work -->
 
-## 2. Statistics
+## Statistics
 
 __Median__
 
@@ -148,7 +148,7 @@ __Significance of correlation coefficient__
 cfa.corr_significance(array_X, array_Y)
 ```
 
-## 3. Linear regression
+## Linear regression
 
 
 
@@ -207,7 +207,7 @@ __Sample Kurtosis__
 cfa.sample_kurtosis(array)
 ```
 
-## 4. Probabililty
+## Probabililty
 
 __Covariance Matrix__ - takes array of arrays
 
@@ -222,7 +222,7 @@ cfa.correlation_matrix(array)
 ```
 
 
-## 5. HELPER FUNCTIONS
+## HELPER FUNCTIONS
 
 __Yield__
 
