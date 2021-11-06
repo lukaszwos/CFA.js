@@ -2,80 +2,6 @@
 JS library for financial math
 
 
-
-
-
-## HELPER FUNCTIONS
-
-__Yield__
-
-```javascript
-cfa.yield(a,b)
-```
-
-__Average__
-
-```javascript
-cfa.average(array)
-```
-
-__Array parse to float__
-
-```javascript
-cfa.float_array(array)
-```
-
-__Sum of array__
-
-```javascript
-cfa.sum(array)
-```
-
-
-__Array - sort descending__
-
-```javascript
-cfa.sort_desc(array)
-```
-
-__Array - Extent__
-
-```javascript
-cfa.extent(array)
-```
-
-__MAX__
-
-```javascript
-cfa.max(array)
-```
-
-
-__MIN__
-
-```javascript
-cfa.min(array)
-```
-
-
-__Range__
-
-```javascript
-cfa.range(array)
-```
-
-__k days yield array__
-
-```javascript
-cfa.yield_array(array, days)
-```
-
-__Rolling function with callback__
-
-```javascript
-cfa.rolling(array, days, callback)
-```
-
 ## TIME VALUE OF MONEY FUNCTIONS
 
 __Future value__
@@ -290,6 +216,74 @@ cfa.correlation_matrix(array)
 ```
 
 
+## HELPER FUNCTIONS
+
+__Yield__
+
+```javascript
+cfa.yield(a,b)
+```
+
+__Average__
+
+```javascript
+cfa.average(array)
+```
+
+__Array parse to float__
+
+```javascript
+cfa.float_array(array)
+```
+
+__Sum of array__
+
+```javascript
+cfa.sum(array)
+```
 
 
+__Array - sort descending__
+
+```javascript
+cfa.sort_desc(array)
+```
+
+__Array - Extent__
+
+```javascript
+cfa.extent(array)
+```
+
+__MAX__
+
+```javascript
+cfa.max(array)
+```
+
+
+__MIN__
+
+```javascript
+cfa.min(array)
+```
+
+
+__Range__
+
+```javascript
+cfa.range(array)
+```
+
+__k days yield array__
+
+```javascript
+cfa.yield_array(array, days)
+```
+
+__Rolling function with callback__
+
+```javascript
+cfa.rolling(array, days, callback)
+```
 
