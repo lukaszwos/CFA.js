@@ -1,7 +1,7 @@
 # CFA.js
 JS library for financial math
 
-[Time value of money functions](## 1.time-value-of-money-functions)
+[Time value of money functions](#1.time-value-of-money-functions)
 [Statistics](## 2. Statistics)
 3. [Linear Regression](## 3. Linear regression)
 4. [Probability](## 4. Probabililty)
