@@ -3,6 +3,9 @@
 
 # cfa.js
 
+[@lukaszwos](www.twitter.com/lukaszwos)
+---
+
 
 1. [Time value of money functions](#time-value-of-money-functions)
 2. [Statistics](#statistics)
