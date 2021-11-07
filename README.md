@@ -3,6 +3,9 @@
 
 # cfa.js
 
+---
+ [lukaszwos](www.twitter.com/lukaszwos)
+
 
 
 
@@ -347,8 +350,5 @@ __Rolling function with callback__
 ```javascript
 cfa.rolling(array, days, callback)
 ```
----
-ddjkjd Drop me a line on [lukaszwos](www.twitter.com/lukaszwos)
-
 
 ---
