@@ -4,7 +4,7 @@
 # cfa.js
 
 ---
- [lukaszwos](www.twitter.com/lukaszwos)
+ [@lukaszwos](www.twitter.com/lukaszwos)
 
 
 
