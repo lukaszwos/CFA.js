@@ -107,7 +107,30 @@ __Net Present Value__
 cfa.npv(array, r)
 ```
 
-<!-- Internal Rate of Return - doesn't work -->
+__Internal Rate of Return__
+
+```javascript
+cfa.npv(array)
+```
+
+returns object: 
+```javascript
+{rate, NPV}
+```
+
+for instance:
+
+```javascript
+
+let array = [-50, 20, 10, 5, 30, 50]
+
+cfa.irr(array)
+```
+
+returns:
+```javascript
+{ rate: 27.860000000001556, NPV: 0.007680729691662336 }
+```
 
 
 
