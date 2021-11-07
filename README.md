@@ -3,8 +3,6 @@
 
 # cfa.js
 
----
- [@lukaszwos](www.twitter.com/lukaszwos)
 
 
 
