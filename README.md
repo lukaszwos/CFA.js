@@ -3,8 +3,8 @@
 
 # cfa.js
 
-[@lukaszwos](www.twitter.com/lukaszwos)
----
+
+
 
 
 1. [Time value of money functions](#time-value-of-money-functions)
@@ -348,3 +348,8 @@ __Rolling function with callback__
 cfa.rolling(array, days, callback)
 ```
 
+
+---
+
+[@lukaszwos](www.twitter.com/lukaszwos)
+---
