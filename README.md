@@ -351,5 +351,5 @@ cfa.rolling(array, days, callback)
 
 ---
 
-[@lukaszwos](www.twitter.com/lukaszwos)
+[lukaszwos](www.twitter.com/lukaszwos)
 ---
