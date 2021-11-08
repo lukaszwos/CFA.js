@@ -55,6 +55,26 @@ returns:
 ]
 ```
 
+Calculate irr of a project
+> irr functions takes as an input an array where `array[0]` (first element of the array) is the initial outlay.
+
+
+```javascript
+const array = [-50, 20, 10, 5, 30, 50]
+
+cfa.irr(array)
+
+```
+
+returns:
+
+```javascript
+{ rate: 27.860000000001556, NPV: 0.007680729691662336 }
+```
+
+> calculated irr must be from <0, 100> extent. 
+> irr function uses 0.001 step 
+
 
 ## TIME VALUE OF MONEY FUNCTIONS
 
