@@ -20,7 +20,7 @@ readme is due to chcnges
 ## Example
 
 Calculate rolling return in an array
-> rolling return day by day (you can input any number of day - lower than array length of course)
+> rolling return day by day (you can input any number of days - lower than array length of course)
 
 ```javascript
 
