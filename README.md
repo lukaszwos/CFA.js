@@ -4,7 +4,21 @@
 # cfa.js
 
 still in beta - ironing some bugs...
-readme is due to chcnges
+readme is due to changes
+
+## Installation
+
+via npm:
+```console
+npm i cfs.js
+```
+
+or frontside:
+```javascript
+
+<script src="cfa.js></script>
+```
+
 
 
 
