@@ -92,7 +92,7 @@ let time = 0.5 // in years
 let rate = 0.1 // yearly = 10%
 let dividend = 0.03 // dividend yield = 3%
 
-cfa.callOption(0.2, 42, 40, 0.5, 0.1, 0.03)
+cfa.callOption(vol, price, strike, time, rate, dividend)
 
 // {
 //   d1: 0.6631966109280495,
