@@ -27,11 +27,12 @@ or frontside:
 2. [Statistics](#statistics)
 3. [Linear Regression](#linear-regression)
 4. [Probability](#probabililty)
-5. [Helper Functions](#helper-functions)
+5. [Derivatives](#derivatives)
+6. [Helper Functions](#helper-functions)
 
 
 
-## Example
+## Examples
 
 Calculate rolling return in an array
 > rolling return day by day (you can input any number of days - lower than array length of course)
@@ -74,6 +75,34 @@ returns:
 
 > calculated irr must be from <0, 100> extent. 
 > irr function uses 0.001 step 
+
+
+Calculate value of a call option using Black Scholes formula:
+
+```javascript
+cfa.callOption(vol, price, strike, time, rate, dividend)
+
+// returns
+// {d1, d2, Nd1, Nd2, callValue }
+
+let vol = 0.2 // standard deviation = 20%
+let price = 42 
+let strike = 40
+let time = 0.5 // in years
+let rate = 0.1 // yearly = 10%
+let dividend = 0.03 // dividend yield = 3%
+
+cfa.callOption(0.2, 42, 40, 0.5, 0.1, 0.03)
+
+// {
+//   d1: 0.6631966109280495,
+//   d2: 0.5217752546907399,
+//   Nd1: 0.7463978073568774,
+//   Nd2: 0.6990866809248882,
+//   callValue: 4.2823136053820505
+// }
+
+```
 
 
 ## TIME VALUE OF MONEY FUNCTIONS
@@ -322,6 +351,19 @@ __Correlation Matrix__ - takes array of arrays
 ```javascript
 cfa.correlation_matrix(array)
 ```
+
+## Derivatives
+
+__Call option__ - valuation of a call option using Black Scholes formula
+
+```javascript
+cfa.callOption(vol, price, strike, time, rate, dividend)
+
+// returns
+// {d1, d2, Nd1, Nd2, callValue }
+
+```
+
 
 
 ## HELPER FUNCTIONS
