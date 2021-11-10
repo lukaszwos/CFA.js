@@ -3,7 +3,7 @@
 
 # cfa.js
 
-still in beta 
+still in beta - ironing some bugs...
 readme is due to changes
 
 ## Installation
@@ -212,6 +212,16 @@ returns:
 <!-- // 1.13 XIRR doesn't work -->
 
 ## Statistics
+
+__Cumulative Distribution Function__ - normal distribution
+
+> using Hastings approximation
+
+```javascript
+cfa.cfa.normalCdf(0)
+
+//0.49999985009951 - close enough
+```
 
 __Median__
 
