@@ -78,6 +78,17 @@ returns:
 
 ## TIME VALUE OF MONEY FUNCTIONS
 
+__CAGR - compounded annual growth rate__
+
+```javascript
+cfa.cagr(ending, start, years)
+
+cfa.cagr(125,100,2)
+
+// 0.1180339887498949
+```
+
+
 __Future value__
 
 ```javascript
