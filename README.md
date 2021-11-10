@@ -160,7 +160,7 @@ cfa.npv(array, r)
 __Internal Rate of Return__
 
 ```javascript
-cfa.npv(array)
+cfa.irr(array)
 ```
 
 returns object: 
