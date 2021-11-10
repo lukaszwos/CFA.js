@@ -526,22 +526,14 @@ cfa.callOption = (vol, price, strike, time, rate, dividend) => {
          return numerator/denominator
       }
 
-      function normalCdf(X){   //HASTINGS.  MAX ERROR = .000001
-        var T=1/(1+.2316419*Math.abs(X));
-        var D=.3989423*Math.exp(-X*X/2);
-        var Prob=D*T*(.3193815+T*(-.3565638+T*(1.781478+T*(-1.821256+T*1.330274))));
-        if (X>0) {
-            Prob=1-Prob
-        }
-        return Prob
-    } 
+     
 
 
     
 
 
-    let left =  price * Math.exp(-dividend*time) * normalCdf(dOne(vol, price, strike, time, rate, dividend)) 
-    let right = strike * Math.exp(-rate*time) * normalCdf(dTwo(vol, price, strike, time, rate, dividend))
+    let left =  price * Math.exp(-dividend*time) * cfa.normalCdf(dOne(vol, price, strike, time, rate, dividend)) 
+    let right = strike * Math.exp(-rate*time) * cfa.normalCdf(dTwo(vol, price, strike, time, rate, dividend))
     
     let callValue = left - right
 
@@ -549,8 +541,8 @@ cfa.callOption = (vol, price, strike, time, rate, dividend) => {
     let d1 = dOne(vol, price, strike, time, rate, dividend)
     let d2 = dTwo(vol, price, strike, time, rate, dividend)
 
-    let Nd1 = normalCdf(d1)
-    let Nd2 = normalCdf(d2)
+    let Nd1 = cfa.normalCdf(d1)
+    let Nd2 = cfa.normalCdf(d2)
 
 
 
@@ -558,7 +550,15 @@ cfa.callOption = (vol, price, strike, time, rate, dividend) => {
     return {d1, d2, Nd1, Nd2, callValue }
 }
 
-
+cfa.normalCdf = function(X){   //HASTINGS.  MAX ERROR = .000001
+    let T=1/(1+.2316419*Math.abs(X));
+    let D=.3989423*Math.exp(-X*X/2);
+    let Prob=D*T*(.3193815+T*(-.3565638+T*(1.781478+T*(-1.821256+T*1.330274))));
+    if (X>0) {
+        Prob=1-Prob
+    }
+    return Prob
+} 
 
 
 
