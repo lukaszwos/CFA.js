@@ -79,7 +79,7 @@ cfa.range = (array) => {
 	return cfa.extent(array).max - cfa.extent(array).min;
 };
 
-// 0.7 k days yield array
+// 0.7 k days yield array 
 
 cfa.yield_array = (array, days) => {
 	let yield_arr = new Array();
@@ -129,7 +129,14 @@ cfa.fv_continous = (pv, r, n) => {
     return (pv * Math.pow(Math.E, r*n));
 }
 
+// CAGR - compounded annual growth rate
+
+cfa.cagr = (ending, start, years) => {
+    return Math.pow(ending/start, 1/years) - 1
+}
+
 // 1.4 Effective Annual Rate
+
 
 cfa.ear = (r,m) => {
     if (r>1) console.log('Are you sure that the r is sooo high?')
@@ -501,6 +508,55 @@ cfa.correlation_matrix = (array) => {
 }
 
 
+
+cfa.callOption = (vol, price, strike, time, rate, dividend) => {
+
+    let dOne = (vol, price, strike, time, rate, dividend) => {
+        let numerator = Math.log(price/strike) + ((rate - dividend + ((vol**2)/2) ) * time)
+        let denominator = vol*(time**0.5)
+     
+        return numerator/denominator
+     }
+     
+     
+     let dTwo = (vol, price, strike, time, rate, dividend) => {
+         let numerator = Math.log(price/strike) + ((rate - dividend - ((vol**2)/2) ) * time)
+         let denominator = vol*(time**0.5)
+      
+         return numerator/denominator
+      }
+
+      function normalCdf(X){   //HASTINGS.  MAX ERROR = .000001
+        var T=1/(1+.2316419*Math.abs(X));
+        var D=.3989423*Math.exp(-X*X/2);
+        var Prob=D*T*(.3193815+T*(-.3565638+T*(1.781478+T*(-1.821256+T*1.330274))));
+        if (X>0) {
+            Prob=1-Prob
+        }
+        return Prob
+    } 
+
+
+    
+
+
+    let left =  price * Math.exp(-dividend*time) * normalCdf(dOne(vol, price, strike, time, rate, dividend)) 
+    let right = strike * Math.exp(-rate*time) * normalCdf(dTwo(vol, price, strike, time, rate, dividend))
+    
+    let callValue = left - right
+
+
+    let d1 = dOne(vol, price, strike, time, rate, dividend)
+    let d2 = dTwo(vol, price, strike, time, rate, dividend)
+
+    let Nd1 = normalCdf(d1)
+    let Nd2 = normalCdf(d2)
+
+
+
+
+    return {d1, d2, Nd1, Nd2, callValue }
+}
 
 
 
