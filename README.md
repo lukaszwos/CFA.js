@@ -3,7 +3,7 @@
 
 # cfa.js
 
-still in beta - ironing some bugs...
+still in beta 
 readme is due to changes
 
 ## Installation
@@ -80,10 +80,6 @@ returns:
 Calculate value of a call option using Black Scholes formula:
 
 ```javascript
-cfa.callOption(vol, price, strike, time, rate, dividend)
-
-// returns
-// {d1, d2, Nd1, Nd2, callValue }
 
 let vol = 0.2 // standard deviation = 20%
 let price = 42 
