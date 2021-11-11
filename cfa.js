@@ -588,21 +588,44 @@ cfa.nCk = function(n,k) {
 }
 
 
-cfa.binomialPdf = function(n,x,p) {
-    return cfa.nCk(n,x) * (p**x) * (1-p)**(n-x)
-}
+cfa.binomial = function(n,x,p) {
+    function binomialPdf(n,x,p) {
+        return cfa.nCk(n,x) * (p**x) * (1-p)**(n-x)
+    } 
 
+    let pdf = binomialPdf(n,x,p)
 
-cfa.binomialCDF = function(n,x,p) {
-    
-    let sum = 0
+    let CDF = 0
+
     for (let i = 0; i < x+1; i++) {
-        sum = sum + cfa.binomialPdf(n,i,p)
+        CDF = CDF + binomialPdf(n,i,p)
         
     }
 
-    return sum
+    let mean = n * p
+
+    let variance = mean * (1 - p)
+
+
+    return {pdf, CDF, mean, variance}
+
 }
+
+// cfa.binomialPdf = function(n,x,p) {
+//     return cfa.nCk(n,x) * (p**x) * (1-p)**(n-x)
+// }
+
+
+// cfa.binomialCDF = function(n,x,p) {
+    
+//     let sum = 0
+//     for (let i = 0; i < x+1; i++) {
+//         sum = sum + cfa.binomialPdf(n,i,p)
+        
+//     }
+
+//     return sum
+// }
 
 
 
