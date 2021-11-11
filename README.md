@@ -213,14 +213,25 @@ returns:
 
 ## Statistics
 
-__Cumulative Distribution Function__ - normal distribution
+__Normal Distribution__ 
 
 > using Hastings approximation
 
 ```javascript
-cfa.normalCdf(0)
+cfa.normal(x)
 
-//0.49999985009951 - close enough
+// returns object {pdf, CDF, mean, variance}
+
+cfa.normal(1)
+
+
+// {
+//   pdf: 0.24197072451914337,
+//   CDF: 0.8413447721886403,
+//   mean: 0,
+//   variance: 1
+// }
+
 ```
 
 __Binomial Coefficient__ - nCk, n Chooses k
