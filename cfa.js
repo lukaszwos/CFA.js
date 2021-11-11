@@ -101,6 +101,21 @@ cfa.rolling = (array, days, callback) =>{
 	return output;
 }
 
+// factorial
+
+cfa.factorial = function(num) {
+    if (num < 0) {
+        return -1
+    }
+    if (num == 0) {
+        return 1
+    } 
+    else {
+        return num * cfa.factorial(num-1)
+    }
+    
+}
+
 
 
 // 1. TIME VALUE OF MONEY FUNCTIONS
@@ -469,6 +484,8 @@ cfa.sample_kurtosis = (array) => {
 
 // 3 Probabililty
 
+
+
 // 3.1 Covariance Matrix - takes array of arrays
 
 cfa.covariance_matrix = (array) => {
@@ -559,6 +576,33 @@ cfa.normalCdf = function(X){   //HASTINGS.  MAX ERROR = .000001
     }
     return Prob
 } 
+
+
+cfa.nCk = function(n,k) {
+    let numerator = cfa.factorial(n)
+
+    let denominator = cfa.factorial(k) * cfa.factorial(n - k)
+
+    return numerator/denominator
+
+}
+
+
+cfa.binomialPdf = function(n,x,p) {
+    return cfa.nCk(n,x) * (p**x) * (1-p)**(n-x)
+}
+
+
+cfa.binomialCDF = function(n,x,p) {
+    
+    let sum = 0
+    for (let i = 0; i < x+1; i++) {
+        sum = sum + cfa.binomialPdf(n,i,p)
+        
+    }
+
+    return sum
+}
 
 
 
