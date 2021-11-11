@@ -223,6 +223,42 @@ cfa.cfa.normalCdf(0)
 //0.49999985009951 - close enough
 ```
 
+__Binomial Coefficient__ - nCk, n Chooses k
+
+```javascript
+cfa.nCk(9,3)
+
+// 84
+
+```
+
+__Binomial pdf__
+
+```javascript
+cfa.binomialPdf(trials, success, probability)
+
+// probability of number of successes EQUAL to 2 in 5 trials, with probability of success equal to 0.3
+
+cfa.binomial(5,2,0.3)
+
+// 0.3086999999999999
+```
+
+__Binomial CDF__
+
+```javascript
+cfa.binomialPdf(trials, success, probability)
+
+// probability of number of successes LESS or EQUAL to 2 in 5 trials, with probability of success equal to 0.3
+
+cfa.binomial(5,2,0.3)
+
+// 0.8369199999999997
+
+```
+
+
+
 __Median__
 
 ```javascript
@@ -373,6 +409,20 @@ cfa.callOption(vol, price, strike, time, rate, dividend)
 
 
 ## HELPER FUNCTIONS
+
+
+__Factorial__
+
+```javascript
+cfa.factorial(num)
+
+cfa.factorial(3)
+
+// 6
+
+cfa.factorial(5)
+
+// 120
 
 __Yield__
 
