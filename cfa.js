@@ -567,14 +567,26 @@ cfa.callOption = (vol, price, strike, time, rate, dividend) => {
     return {d1, d2, Nd1, Nd2, callValue }
 }
 
-cfa.normalCdf = function(X){   //HASTINGS.  MAX ERROR = .000001
+cfa.normal= function(X){   //CDF - HASTINGS.  MAX ERROR = .000001
     let T=1/(1+.2316419*Math.abs(X));
     let D=.3989423*Math.exp(-X*X/2);
     let Prob=D*T*(.3193815+T*(-.3565638+T*(1.781478+T*(-1.821256+T*1.330274))));
     if (X>0) {
         Prob=1-Prob
     }
-    return Prob
+
+    let CDF = Prob
+    
+
+    let pdfNum = Math.exp(X**2 / (-2))
+    let pdfDen = Math.pow(2*Math.PI, 1/2)
+
+    let pdf = pdfNum/pdfDen
+
+    let mean = 0
+    let variance = 1
+
+    return {pdf, CDF, mean, variance}
 } 
 
 
