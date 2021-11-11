@@ -232,31 +232,24 @@ cfa.nCk(9,3)
 
 ```
 
-__Binomial pdf__
+__Binomial__
 
 ```javascript
-cfa.binomialPdf(trials, success, probability)
+cfa.binomial(trials, success, probability)
 
-// probability of number of successes EQUAL to 2 in 5 trials, with probability of success equal to 0.3
+// returns object {pdf, CDF, mean, variance}
 
 cfa.binomial(5,2,0.3)
 
-// 0.3086999999999999
-```
+// {
+//   pdf: 0.3086999999999999,
+//   CDF: 0.8369199999999997,
+//   mean: 1.5,
+//   variance: 1.0499999999999998
+// }
 
-__Binomial CDF__
-
-```javascript
-cfa.binomialPdf(trials, success, probability)
-
-// probability of number of successes LESS or EQUAL to 2 in 5 trials, with probability of success equal to 0.3
-
-cfa.binomial(5,2,0.3)
-
-// 0.8369199999999997
 
 ```
-
 
 
 __Median__
