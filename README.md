@@ -218,7 +218,7 @@ __Cumulative Distribution Function__ - normal distribution
 > using Hastings approximation
 
 ```javascript
-cfa.cfa.normalCdf(0)
+cfa.normalCdf(0)
 
 //0.49999985009951 - close enough
 ```
