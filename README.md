@@ -3,6 +3,8 @@
 
 # cfa.js
 
+editedd
+
 still in beta - ironing some bugs...
 readme is due to changes
 
