@@ -6,7 +6,7 @@
 
 
 still in beta - ironing some bugs...
-readme is due to changes
+readme is due to change
 
 ## Installation
 
